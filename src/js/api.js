@@ -1,6 +1,6 @@
 export default class API {
   async getArticles() {
-    this.response = await fetch('https://server-workerss.onrender.com')
+    this.response = await fetch('https://server-workerss.onrender.com/articles')
       .then(async (value) => {
         this.articles = await value.json();
       })
